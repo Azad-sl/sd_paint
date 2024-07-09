@@ -1,1 +1,1 @@
-from .query_gold_price import *
+from .sd_paint import *
