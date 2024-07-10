@@ -57,7 +57,7 @@ class sd_paint(Plugin):
             if response.status_code == 200:
                 data = response.json()
                 if data.get("code") == 200:
-                    return f"SD绘画完成。生成图像链接: {data.get('imgurl')}"
+                    return f"SD绘画完成🎉。生成图像链接: {data.get('imgurl')}"
                 else:
                     logger.error(f"API返回错误信息: {data.get('msg')}")
                     return None
